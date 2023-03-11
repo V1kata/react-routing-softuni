@@ -4,7 +4,7 @@ import { Home } from './components/Home';
 import { About } from './components/About';
 import { Nav } from './components/Nav';
 import { CharacterList } from './components/CharacterList';
-import { Characters } from './components/Characters';
+import { Character } from './components/Character';
 function App() {
    return (
       <div className="App">
@@ -16,6 +16,7 @@ function App() {
                <Route path='/' element={<Home />} />
                <Route path='/about/*' element={<About />} />
                <Route path='/characters' element={<CharacterList />} />
+               <Route path='/characters/:charId' element={<Character />}/>
             </Routes>
          </header>
       </div>

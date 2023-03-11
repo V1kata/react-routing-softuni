@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { CharacterListItem } from "./CharacterListItem";
 
 const baseUrl = 'https://swapi.dev/api/people';
 export const CharacterList = () => {
@@ -12,14 +13,12 @@ export const CharacterList = () => {
             });
     }, []);
 
-    console.log(characters);
-
     return (
         <>
             <h1>Star Wars Characters</h1>
 
             <ul>
-                {characters.map(x => <div>{x.name}</div>)}
+                {characters.map(x => <CharacterListItem key={x.url} {...x} />)}
             </ul>
         </>
     );
