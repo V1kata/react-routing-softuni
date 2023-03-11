@@ -1,0 +1,15 @@
+.navigation li {
+    padding-right: 15px;
+    display: inline;
+    list-style: none;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
