@@ -13,3 +13,12 @@
     color: aqua;
     text-decoration: underline;
 }
+
+.nav-links {
+    color: purple !important;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
